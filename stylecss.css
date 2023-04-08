@@ -8,6 +8,7 @@ body{
     font-weight:900;
     font-size: 24px;
     color: #f9faf8;
+    text-align: center;
 
 }
 .box{
@@ -28,9 +29,11 @@ body{
 }
 .header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 40px 120px;
-
+    gap: 1rem;
+    align-items: center;
 }
 ul{
     list-style-type: none;
@@ -57,6 +60,10 @@ a:hover{
     color: white;
     padding: 8px 16px;
     border-radius: 8px;
+    appearance: none;
+    box-sizing: content-box;
+    width: 10rem;
+    height: 2rem;
   }
   button:hover{
     background: #839cc4;
@@ -69,8 +76,10 @@ a:hover{
 .hero{
     display: flex;
     margin: 40px 120px;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
+    gap:1rem ;
 }
 p{
     margin: 0px;
@@ -78,6 +87,7 @@ p{
     color: #e5e7eb;
     padding-bottom: 8px;
     font-size: 18px;
+    max-width: 50ch;
 
 }
 h1{
@@ -87,18 +97,35 @@ h1{
     padding-bottom: 0px;
     font-size: 40px;
     font-weight: 900;
+    text-align: center;
 }
 .lefthero{
-    width: 400px;
-    height: 200px;
-    flex-shrink: 0;
+    /*width: 400px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 400px;
+    height: 250px;
+    flex-grow: 1;
+    max-width: 100%;
+    gap: 4px
     
     
 
 }
-img{
-    width: 400px;
-    height: 210px;
+.rigthhero, img{
+    width: 500px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-basis: 400px;
+    height: 260px;
+    max-width: 100%;
+}
+.rigthhero{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
 }
 
 #infobox{
